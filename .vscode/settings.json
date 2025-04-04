@@ -1,0 +1,45 @@
+{
+  "files.associations": {
+    "*.css": "css"
+  },
+  "emmet.includeLanguages": {
+    "postcss": "css"
+  },
+  "cssvar.enable": true,
+  "cssvar.files": ["dist/css/global.css"],
+  "cssvar.ignore": ["**/node_modules/**"],
+  "cssvar.extensions": ["css"],
+  "cssvar.enableColors": true,
+  "cssvar.enableGotoDef": true,
+  "cssvar.enableHover": true,
+  "editor.quickSuggestions": {
+    "strings": true
+  },
+  "cssvar.postcssPlugins": ["postcss-import-ext-glob", "postcss-import", "tailwindcss"],
+  "css.validate": true,
+  "css.lint.unknownProperties": "ignore",
+  "css.lint.validProperties": ["composes"],
+  "github.copilot.chat.commitMessageGeneration.instructions": [
+    {
+      "text": "Always write commit messages in English using the format: <type>: <emoji> <short, imperative message>."
+    },
+    {
+      "text": "Supported commit types: feat (✨), fix (🐛), config (⚙️), remove (🚮), content (🍱), docs (📝), perf (🐎), refactor (♻️), wip (🚧), a11y (♿️), deps (⬆️), ui (💄), seo (🔍)."
+    },
+    {
+      "text": "Start with a capital letter, do not end with a period, and keep the message around 72 characters max."
+    },
+    {
+      "text": "Reference issues using the format #<issue_number> when applicable."
+    },
+    {
+      "text": "Analyze the code changes thoroughly before generating a commit message to ensure accuracy."
+    },
+    {
+      "text": "Be specific about what changed instead of using generic descriptions."
+    },
+    {
+      "file": "commit-style.md"
+    }
+  ]
+}

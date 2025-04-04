@@ -1,0 +1,37 @@
+{
+  "name": "astro-cube-krn-boilerplate",
+  "type": "module",
+  "version": "0.0.1",
+  "author": "Korneliusz Burian",
+  "description": "A modern Astro v5.6 boilerplate with CUBE CSS methodology, Tailwind CSS v4, TypeScript support, and design token integration. Features PostCSS processing, responsive utilities, and a developer-friendly workflow for building performant, maintainable web projects.",
+  "homepage": "https://github.com/korneliuszburian",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro check && astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/check": "^0.9.4",
+    "@astrojs/partytown": "^2.1.4",
+    "@astrojs/sitemap": "^3.2.1",
+    "@tailwindcss/postcss": "^4.0.13",
+    "@tailwindcss/vite": "^4.0.13",
+    "astro": "^5.6.0",
+    "postcss": "^8.5.3",
+    "postcss-merge-rules": "^7.0.4",
+    "slugify": "^1.6.6",
+    "tailwindcss": "^4.0.13"
+  },
+  "devDependencies": {
+    "@types/postcss-js": "^4.0.4",
+    "postcss-js": "^4.0.1",
+    "prettier": "^3.2.5",
+    "prettier-plugin-astro": "^0.13.0",
+    "typescript": "^5.3.3"
+  },
+  "engines": {
+    "node": ">=20.12.2"
+  }
+}

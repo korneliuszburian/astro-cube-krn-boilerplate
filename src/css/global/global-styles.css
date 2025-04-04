@@ -1,0 +1,66 @@
+/*
+  Global styles
+
+  Low-specificity, global styles that apply to the whole
+  project: https://cube.fyi/css.html
+*/
+body {
+  background: var(--color-light);
+  color: var(--color-dark);
+  font-size: var(--size-step-0);
+  font-family: var(--font-base);
+  line-height: var(--leading-standard);
+}
+
+
+:is(h1,h2,h3,h4,h5,h6) {
+  font-family: var(--heading-font-family);
+  font-feature-settings: "cpsp" on;
+  font-weight: var(--heading-font-weight);
+  letter-spacing: var(--heading-kerning,var(--kerning));
+  line-height: var(--heading-line-height,var(--leading-fine));
+  overflow-wrap: anywhere;
+  text-wrap: balance
+}
+
+:is(h1) {
+  --heading-font-family: var(--font-statement);
+  --heading-font-weight: var(--font-bold)
+}
+
+:is(h2,h3,h4,h5,h6) {
+  --heading-font-family: var(--font-display);
+  --heading-font-weight: var(--font-medium)
+}
+
+h1 {
+  font-size: var(--text-size-heading-1);
+  max-width: var(--measure-heading-1)
+}
+
+h2 {
+  font-size: var(--text-size-heading-2);
+  max-width: var(--measure-heading-2)
+}
+
+h3 {
+  max-width: var(--measure-heading-3)
+}
+
+h3,h4 {
+  font-size: var(--text-size-heading-4)
+}
+
+h4 {
+  max-width: var(--measure-heading-4)
+}
+
+h5 {
+  font-size: var(--text-size-heading-5);
+  max-width: var(--measure-heading-5)
+}
+
+h6 {
+  font-size: var(--text-size-heading-6);
+  max-width: var(--measure-heading-6)
+}

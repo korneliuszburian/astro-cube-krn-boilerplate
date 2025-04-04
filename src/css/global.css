@@ -1,0 +1,48 @@
+@import 'tailwindcss';
+
+@import './global/reset.css' layer(base);
+@import './global/fonts.css' layer(base);
+
+@config '../../tailwind.config.ts';
+@import './global/variables.css';
+@import './global/global-styles.css' layer(components);
+/*
+See issue: https://github.com/frankstallone/astro-cube-boilerplate/issues/1
+Reference source: https://github.com/Set-Creative-Studio/cube-boilerplate/blob/main/src/css/global.css#L11
+
+@import-glob 'blocks/*.css' layer(components);
+@import-glob 'components/*.css' layer(components);
+@import-glob 'utilities/*.css' layer(components);
+*/
+
+@import './blocks/prose.css';
+@import './components/box.css';
+@import './components/cluster.css';
+@import './components/flow.css';
+@import './components/grid.css';
+@import './components/icon.css';
+@import './components/repel.css';
+@import './components/sidebar.css';
+@import './components/switcher.css';
+@import './components/wrapper.css';
+@import './utilities/region.css';
+@import './utilities/visually-hidden.css';
+
+
+/*
+  The default border color has changed to `currentColor` in Tailwind CSS v4,
+  so we've added these compatibility styles to make sure everything still
+  looks the same as it did with Tailwind CSS v3.
+
+  If we ever want to remove these styles, we need to add an explicit border
+  color utility to any element that depends on these defaults.
+*/
+@layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentColor);
+  }
+}
