@@ -26,7 +26,7 @@ Reference source: https://github.com/Set-Creative-Studio/cube-boilerplate/blob/m
 @import './components/switcher.css';
 @import './components/wrapper.css';
 @import './utilities/region.css';
-@import './utilities/visually-hidden.css';
+@import './utilities/visually-hidden.css' layer(components);
 
 
 /*

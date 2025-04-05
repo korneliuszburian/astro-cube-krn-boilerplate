@@ -9,7 +9,7 @@ export default defineConfig({
     sitemap(),
   ],
   vite: {
-    plugins: [tailwindcss()],
+    plugins: [tailwindcss({applyBaseStyles: false})]
   },
   trailingSlash: 'never'
 });

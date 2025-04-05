@@ -5,7 +5,6 @@ import postcss from 'postcss';
 import postcssJs from 'postcss-js';
 
 import clampGenerator from './src/css-utils/clamp-generator';
-import type { Token } from './src/css-utils/tokens-to-tailwind';
 import tokensToTailwind from './src/css-utils/tokens-to-tailwind';
 
 // Import design token JSON files
@@ -16,19 +15,6 @@ import textSizeTokens from './src/design-tokens/text-sizes.json';
 import textLeadingTokens from './src/design-tokens/text-leading.json';
 import textWeightTokens from './src/design-tokens/text-weights.json';
 import viewportTokens from './src/design-tokens/viewports.json';
-
-// Define the plugin API interface with the required properties
-interface PluginAPI {
-  addBase: (styles: Record<string, any>) => void;
-  addComponents: (components: Record<string, any>) => void;
-  addUtilities: (utilities: Record<string, any>, options?: object) => void;
-  config: () => any;
-  e: (className: string) => string;
-  prefix: (selector: string) => string;
-  theme: (path: string, defaultValue?: any) => any;
-  variants: (path: string, defaultValue?: string[]) => string[];
-  corePlugins: (path: string) => boolean;
-}
 
 // Process design tokens
 const colors = tokensToTailwind(colorTokens.items);
