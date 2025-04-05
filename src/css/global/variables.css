@@ -12,4 +12,22 @@
   --text-size-heading-4: var(--size-step-2);
   --text-size-heading-5: var(--size-step-2);
   --text-size-heading-6: var(--size-step-2);
+  --color-global-bg: var(--color-light);
+  --color-global-link-color: currentColor;
+  --color-global-text: var(--color-dark);
+  --color-selection-bg: var(--color-dark);
+  --color-selection-text: var(--color-light);
+  --wrapper-max-width: 1360px;
+  --kerning: normal;
+  --kerning-loose: .05ch;
+  --kerning-tight: -.04ch;
+  --kerning-caps: .1ch;
+  --leading: 1.45;
+  --leading-tight: .8;
+  --leading-short: 1.36;
+  --leading-slim: 1.18;
+  --leading-fine: 1.09;
+  --leading-flat: 1;
+  --leading-loose: 1.7;
+  --region-space: var(--space-2xl-3xl);
 }

@@ -4,12 +4,17 @@
   Low-specificity, global styles that apply to the whole
   project: https://cube.fyi/css.html
 */
+
 body {
-  background: var(--color-light);
-  color: var(--color-dark);
-  font-size: var(--size-step-0);
+  background: var(--color-global-bg);
+  color: var(--color-global-text);
+  container-type: inline-size;
   font-family: var(--font-base);
-  line-height: var(--leading-fine);
+  font-size: var(--text-size-base);
+  font-size-adjust: from-font;
+  letter-spacing: var(--kerning);
+  line-height: var(--leading);
+  margin: 0;
 }
 
 

@@ -1,0 +1,26 @@
+.overflow {
+  overflow-x: auto;
+  padding-block-end:var(--scroll-bar-offset);-webkit-overflow-scrolling: touch
+}
+
+.overflow::-webkit-scrollbar {
+  block-size: var(--scroll-bar-size)
+}
+
+.overflow::-webkit-scrollbar-track {
+  background-color: var(--scroll-bar-track-color);
+  border-radius: var(--scroll-bar-radius,0)
+}
+
+.overflow::-webkit-scrollbar-thumb {
+  background-color: var(--scroll-bar-thumb-color);
+  border-radius: var(--scroll-bar-radius,0)
+}
+
+.overflow[data-scroll=snap] {
+  scroll-snap-type: x mandatory
+}
+
+.overflow[data-scroll=snap]>* {
+  scroll-snap-align: start
+}
