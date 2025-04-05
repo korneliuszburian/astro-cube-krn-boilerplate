@@ -11,5 +11,4 @@ export default defineConfig({
   vite: {
     plugins: [tailwindcss({applyBaseStyles: false})]
   },
-  trailingSlash: 'never'
 });

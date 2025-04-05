@@ -5,7 +5,20 @@
     {
       "name": "Base",
       "description": "System fonts for body copy and globally set text.",
-      "value": ["Inter", "Segoe UI", "Roboto", "Helvetica Neue", "Arial", "sans-serif"]
+      "value": [
+        "Satoshi",
+        "Inter",
+        "Segoe UI",
+        "Roboto",
+        "Helvetica Neue",
+        "Arial",
+        "sans-serif"
+      ]
+    },
+    {
+      "name": "Mono",
+      "description": "Monospace font for code samples etc",
+      "value": ["DM Mono", "monospace"]
     }
   ]
 }

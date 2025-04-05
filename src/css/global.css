@@ -1,19 +1,14 @@
-@import 'tailwindcss';
+@import "tailwindcss/theme.css" layer(base);
+@import "tailwindcss/utilities.css" layer(utilities);
+
+
 
 @import './global/reset.css' layer(base);
 @import './global/fonts.css' layer(base);
 
 @config '../../tailwind.config.ts';
-@import './global/variables.css';
-@import './global/global-styles.css' layer(components);
-/*
-See issue: https://github.com/frankstallone/astro-cube-boilerplate/issues/1
-Reference source: https://github.com/Set-Creative-Studio/cube-boilerplate/blob/main/src/css/global.css#L11
-
-@import-glob 'blocks/*.css' layer(components);
-@import-glob 'components/*.css' layer(components);
-@import-glob 'utilities/*.css' layer(components);
-*/
+@import './global/variables.css' layer(components);
+@import './global/global-styles.css';
 
 @import './blocks/prose.css';
 @import './components/box.css';
@@ -26,7 +21,7 @@ Reference source: https://github.com/Set-Creative-Studio/cube-boilerplate/blob/m
 @import './components/switcher.css';
 @import './components/wrapper.css';
 @import './utilities/region.css';
-@import './utilities/visually-hidden.css' layer(components);
+@import './utilities/visually-hidden.css';
 
 
 /*
